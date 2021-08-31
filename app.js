@@ -1,31 +1,17 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const path = require('path');
+const app = express();
+const router = express.Router();
 
-//CONST VARIABLE
-const HOSTNAME = 'localhost';   //Name of website
-const PORT = 5000;              //Port number of website
+const PORT = 3000;              //Port number of website
 
-//Request to render html to server
-const handleRequest = (req, res) => {
-    res.writeHead(200, {
-        'Content-Type': 'text/html'
-    });
-    fs.readFile('./index.html', null, function (err, data) {
-        if (err) {
-            res.writeHead(404);
-            res.write('File not found!');
-        }
-        else {
-            res.write(data);
-        }
-        res.end();
-    })
-}
+router.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname+'/index.html'));
+})
 
-//Create the server from the request
-const server = http.createServer(handleRequest);
+app.use(express.static(__dirname + '/public'));
 
-//Listen to the port
-server.listen(PORT, HOSTNAME, () => {
-  console.log(`Server running at http://${HOSTNAME}:${PORT}/`);
-});
+app.use('/', router);
+app.listen(process.env.PORT || 3000);
+
+console.log(`Server running on Port ${PORT}`);
