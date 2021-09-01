@@ -5,13 +5,35 @@ const router = express.Router();
 
 const PORT = 3000;              //Port number of website
 
+//Home page
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/index.html'));
-})
+});
+//About page
+router.get('/about.html', (req, res) => {
+    res.sendFile(path.join(__dirname+'/about.html'));
+});
+//EPL page
+router.get('/epl.html', (req, res) => {
+    res.sendFile(path.join(__dirname+'/epl.html'));
+});
+//La Liga page
+router.get('/laliga.html', (req, res) => {
+    res.sendFile(path.join(__dirname+'/laliga.html'));
+});
+//Serie A page
+router.get('/serieA.html', (req, res) => {
+    res.sendFile(path.join(__dirname+'/serieA.html'));
+});
+//Ligue 1 page
+router.get('/ligue1.html', (req, res) => {
+    res.sendFile(path.join(__dirname+'/ligue1.html'));
+});
 
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', router);
+app.use('/about.html', router);
 app.listen(process.env.PORT || 3000);
 
 console.log(`Server running on Port ${PORT}`);
