@@ -1,0 +1,28 @@
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    width: 100vw;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 50px;
+}
+
+p.intro-para {
+    font-size: 40px;
+}
+
+div.logo-container {
+    display: flex;
+}
+
+img {
+    height: 32%;
+    width: 32%;
+    margin: 30px;
+    padding-top: 20px;
+}

@@ -33,7 +33,6 @@ router.get('/ligue1.html', (req, res) => {
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', router);
-app.use('/about.html', router);
 app.listen(process.env.PORT || 3000);
 
 console.log(`Server running on Port ${PORT}`);
