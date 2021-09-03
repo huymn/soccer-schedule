@@ -22,6 +22,7 @@ ul {
     background-color: aqua;
     width: 100vw;
     display: flex;
+    justify-content: center;
     list-style-type: none;
     float: left;
 }
@@ -30,6 +31,7 @@ li {
     padding: 10px;
     background-color: blueviolet;
     margin: 10px;
+    border-radius: 50px;
 }
 
 a {
@@ -38,7 +40,7 @@ a {
 }
 
 .container {
-    background-color: antiquewhite;
+    background-color: white;
     height: 100vh;
     width: 100vw;
 }
