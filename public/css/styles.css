@@ -1,11 +1,17 @@
 nav {
-    width: 100vw;
+    width: 50vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: aquamarine;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    max-width: 400px;
 }
 
 p.title {
