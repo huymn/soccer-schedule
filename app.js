@@ -30,6 +30,23 @@ router.get('/ligue1.html', (req, res) => {
     res.sendFile(path.join(__dirname+'/ligue1.html'));
 });
 
+var axios = require('axios').default;
+
+var options = {
+    method: 'GET',
+    url: 'https://api-football-v1.p.rapidapi.com/v3/timezone',
+    headers: {
+        'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
+        'x-rapidapi-key': '7f4b40c699msh5443d12cb54c5b3p17e44bjsnc1b2ef5fb3d0'
+    }
+};
+
+axios.request(options).then(function (response) {
+    console.log(response.data);
+}).catch(function (error) {
+    console.error(error);
+});
+
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', router);
