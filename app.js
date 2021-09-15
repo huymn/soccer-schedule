@@ -34,7 +34,7 @@ var axios = require('axios');
 
 var config = {
     method: 'get',
-    url: 'https://v3.football.api-sports.io/timezone',
+    url: 'https://v3.football.api-sports.io/leagues?id=39',
     headers: {
         'x-rapidapi-host': 'v3.football.api-sports.io',
         'x-rapidapi-key': '0faf0093c15b42c79332d719ba6724f9'
@@ -42,11 +42,11 @@ var config = {
 };
 
 axios(config)
-.then(function (response) {
-  console.log(JSON.stringify(response.data));
+.then((response) => {
+    console.log(response.data.response[0].seasons[0]);
 })
-.catch(function (error) {
-  console.log(error);
+.catch((error) => {
+    console.log(error);
 });
 
 app.use(express.static(__dirname + '/public'));
