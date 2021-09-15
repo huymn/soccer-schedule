@@ -34,10 +34,10 @@ var axios = require('axios').default;
 
 var options = {
     method: 'GET',
-    url: 'https://api-football-v1.p.rapidapi.com/v3/timezone',
+    url: 'https://api-football-v1.p.rapidapi.com/v3/leagues',
     headers: {
         'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
-        'x-rapidapi-key': '7f4b40c699msh5443d12cb54c5b3p17e44bjsnc1b2ef5fb3d0'
+        'x-rapidapi-key': '0faf0093c15b42c79332d719ba6724f9'
     }
 };
 
