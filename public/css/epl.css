@@ -1,0 +1,5 @@
+.table-container {
+    display: flex;
+    position: absolute;
+    top: 60px
+}
