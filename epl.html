@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>English Premier League</title>
 </head>
+<script
+    type="module"
+    src="https://widgets.api-sports.io/football/1.1.8/widget.js">
+</script>
 <body>
     <nav>
         <ul class="nav-bar">
@@ -15,8 +19,16 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <div class="container">
-        EPL
+    <div id="wg-api-football-standings"
+        data-host="v3.football.api-sports.io"
+        data-league="39"
+        data-team=""
+        data-season="2020"
+        data-key="0faf0093c15b42c79332d719ba6724f9"
+        data-theme=""
+        data-show-errors="false"
+        class="api_football_loader">
     </div>
+
 </body>
 </html>

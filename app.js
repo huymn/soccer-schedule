@@ -34,7 +34,7 @@ var axios = require('axios');
 
 var config = {
     method: 'get',
-    url: 'https://v3.football.api-sports.io/leagues?id=39',
+    url: 'https://v3.football.api-sports.io/fixtures/rounds?season=2021&league=39',
     headers: {
         'x-rapidapi-host': 'v3.football.api-sports.io',
         'x-rapidapi-key': '0faf0093c15b42c79332d719ba6724f9'
@@ -43,7 +43,7 @@ var config = {
 
 axios(config)
 .then((response) => {
-    console.log(response.data.response[0].seasons[0]);
+    console.log(response.data);
 })
 .catch((error) => {
     console.log(error);
