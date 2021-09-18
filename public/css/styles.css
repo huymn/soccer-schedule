@@ -41,12 +41,22 @@ ul.nav-bar2 {
     list-style-type: none;
 }
 
-li {
+ul.nav-bar li {
     padding: 10px;
     background-color: rgb(255, 166, 0);
     margin: 10px;
     border-radius: 10px;
+    border-width: 50px;
 }
+
+ul.nav-bar2 button {
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 a {
     color: white;
