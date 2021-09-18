@@ -46,15 +46,16 @@ ul.nav-bar li {
     background-color: rgb(255, 51, 0);
     margin: 10px;
     border-radius: 10px;
-    border-width: 50px;
+    border-width: 10px;
 }
 
 ul.nav-bar2 button {
     padding: 10px;
     background-color: white;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    border-width: 1px;
 }
 
 
