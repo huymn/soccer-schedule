@@ -18,13 +18,27 @@ p.title {
     size: 500px;
 }
 
-ul {
+ul.nav-bar {
     background-color: aqua;
     width: 100vw;
     display: flex;
     justify-content: center;
     list-style-type: none;
     float: left;
+}
+
+div.nav-bar2-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+ul.nav-bar2 {
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 li {

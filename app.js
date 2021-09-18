@@ -30,24 +30,24 @@ router.get('/ligue1.html', (req, res) => {
     res.sendFile(path.join(__dirname+'/ligue1.html'));
 });
 
-var axios = require('axios');
+// var axios = require('axios');
 
-var config = {
-    method: 'get',
-    url: 'https://v3.football.api-sports.io/fixtures?live=all',
-    headers: {
-        'x-rapidapi-host': 'v3.football.api-sports.io',
-        'x-rapidapi-key': '0faf0093c15b42c79332d719ba6724f9'
-    }
-};
+// var config = {
+//     method: 'get',
+//     url: 'https://v3.football.api-sports.io/fixtures?live=all',
+//     headers: {
+//         'x-rapidapi-host': 'v3.football.api-sports.io',
+//         'x-rapidapi-key': '0faf0093c15b42c79332d719ba6724f9'
+//     }
+// };
 
-axios(config)
-.then((response) => {
-    console.log(response.data);
-})
-.catch((error) => {
-    console.log(error);
-});
+// axios(config)
+// .then((response) => {
+//     console.log(response.data);
+// })
+// .catch((error) => {
+//     console.log(error);
+// });
 
 app.use(express.static(__dirname + '/public'));
 
