@@ -19,7 +19,7 @@ p.title {
 }
 
 ul.nav-bar {
-    background-color: aqua;
+    background-color: rgb(66, 102, 221);
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ ul.nav-bar2 {
 
 ul.nav-bar li {
     padding: 10px;
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(255, 51, 0);
     margin: 10px;
     border-radius: 10px;
     border-width: 50px;
