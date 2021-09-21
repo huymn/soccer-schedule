@@ -54,8 +54,17 @@ ul.nav-bar2 button {
     border-width: 1px;
 }
 
-
 a {
     color: white;
     text-decoration: none;
+}
+
+div.table-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+div.standings-container {
+    width: 50vw;
 }
