@@ -9,6 +9,7 @@ html, body {
     min-height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 p.title {
@@ -55,6 +56,8 @@ ul.nav-bar2 button {
 a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 div.table-container {
