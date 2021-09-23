@@ -70,10 +70,13 @@ div.table-container {
     justify-content: center;
 }
 
-div.standings-container {
+div.fixture-table {
+    width: 70vw;
+}
+
+div.standings-table {
     width: 50vw;
     height: 100vh;
-    display: none;
 }
 
 div.hide {

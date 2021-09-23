@@ -19,23 +19,43 @@
     </ul>
     <div class="nav-bar2-container">
         <ul class="nav-bar2">
-            <li><button>Fixtures</button></li>
-            <li><button>Standings</button></li>
-            <li><button>Stats</button></li>
+            <li><button id="fixture-btn">Fixtures</button></li>
+            <li><button id="standings-btn">Standings</button></li>
+            <li><button id="stats-btn">Stats</button></li>
         </ul>
     </div>
-    <div class="container">
-        La Liga
+    
+    <div class="table-container">
+        <div class="fixture-table">
+            <div id="wg-api-football-fixtures"
+                data-host="v3.football.api-sports.io"
+                data-refresh="60"
+                data-date=""
+                data-league="140"
+                data-team=""
+                data-season="2021"
+                data-last=""
+                data-next=""
+                data-key="0faf0093c15b42c79332d719ba6724f9"
+                data-theme=""
+                data-show-errors="false"
+                class="api_football_loader">
+            </div>
+        </div>
+        <div class="standings-table hide">
+            <div id="wg-api-football-standings"
+                data-host="v3.football.api-sports.io"
+                data-league="140"
+                data-team=""
+                data-season="2021"
+                data-key="0faf0093c15b42c79332d719ba6724f9"
+                data-theme=""
+                data-show-errors="false"
+                class="api_football_loader">
+            </div>
+        </div>
     </div>
-    <div id="wg-api-football-standings"
-        data-host="v3.football.api-sports.io"
-        data-league="140"
-        data-team=""
-        data-season="2020"
-        data-key="0faf0093c15b42c79332d719ba6724f9"
-        data-theme=""
-        data-show-errors="false"
-        class="api_football_loader">
-    </div>
+    
+    <script src="src/index.js"></script>
 </body>
 </html>
