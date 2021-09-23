@@ -73,4 +73,9 @@ div.table-container {
 div.standings-container {
     width: 50vw;
     height: 100vh;
+    display: none;
+}
+
+div.hide {
+    display: none;
 }
