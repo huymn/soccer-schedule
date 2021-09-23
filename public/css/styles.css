@@ -60,6 +60,10 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+    color: rgb(228, 122, 36);
+}
+
 div.table-container {
     width: 100vw;
     display: flex;
