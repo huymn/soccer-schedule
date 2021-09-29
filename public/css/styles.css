@@ -23,13 +23,18 @@ ul.nav-bar {
     justify-content: center;
     list-style-type: none;
     float: left;
+    position: fixed;
+    z-index: 1;
 }
 
 div.nav-bar2-container {
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(74, 128, 207);
+    position: fixed;
+    top: 60px;
+    z-index: 1;
 }
 
 ul.nav-bar2 {
@@ -37,6 +42,7 @@ ul.nav-bar2 {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    
 }
 
 ul.nav-bar li {
