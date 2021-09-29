@@ -5,7 +5,6 @@ const standingsTable = document.querySelector(".standings-table");
 
 //Show fixtures when the fixtures button is pressed
 fixtureBtn.addEventListener('click', () => {
-  console.log("clicked")
   removeActiveClasses();
   standingsTable.classList.add('hide');
 });

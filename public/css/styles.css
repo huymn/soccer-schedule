@@ -22,6 +22,20 @@ p.title {
     top: 120px
 }
 
+div.container {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-header {
+    padding-top: 10vh;
+}
+
 ul.nav-bar {
     background-color: rgb(66, 102, 221);
     width: 100vw;
