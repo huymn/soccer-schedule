@@ -16,6 +16,12 @@ p.title {
     size: 500px;
 }
 
+.table-container {
+    display: flex;
+    position: absolute;
+    top: 120px
+}
+
 ul.nav-bar {
     background-color: rgb(66, 102, 221);
     width: 100vw;
