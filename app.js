@@ -29,6 +29,10 @@ router.get('/serieA.html', (req, res) => {
 router.get('/ligue1.html', (req, res) => {
     res.sendFile(path.join(__dirname+'/ligue1.html'));
 });
+//UCL page
+router.get('/ucl.html', (req, res) => {
+    res.sendFile(path.join(__dirname+'/ucl.html'));
+});
 
 // var axios = require('axios');
 
