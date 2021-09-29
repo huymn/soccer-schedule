@@ -88,3 +88,12 @@ div.standings-table {
 div.hide {
     display: none;
 }
+
+select {
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-width: 1px;
+}
