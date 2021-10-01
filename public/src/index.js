@@ -41,22 +41,22 @@ const createNewFixture = (season) => {
   newFixture.setAttribute('refresh-rate', '60');
 
   //today's date
-  newFixture.setAttribute('data-date', '');
+  newFixture.setAttribute('data-date', "");
 
   //league to display for fixture
   newFixture.setAttribute('data-league', '39');
 
   //team to display for
-  newFixture.setAttribute('data-team', '');
+  newFixture.setAttribute('data-team', "");
 
   //season
   newFixture.setAttribute('data-season', season);
 
   //number of previous matches to display
-  newFixture.setAttribute('data-last', '');
+  newFixture.setAttribute('data-last', "");
 
   //number of next matches to display
-  newFixture.setAttribute('data-next', '');
+  newFixture.setAttribute('data-next', "");
 
   //API key (SHOULD BE INVISIBLE/SECURE)
   newFixture.setAttribute('data-key', '0faf0093c15b42c79332d719ba6724f9');
@@ -72,4 +72,21 @@ const createNewFixture = (season) => {
 
   //Return the new fixture
   return newFixture;
+}
+
+seasonSelector.addEventListener('change', () => {
+  //Get the selected season
+  const season = seasonSelector[seasonSelector.selectedIndex].value;
+
+  //Remove all current children nodes
+  removeAllChildNodes(fixtureTable);
+
+  //Add in the newly created element
+  fixtureTable.appendChild(createNewFixture(season));
+});
+
+const removeAllChildNodes = (parent) => {
+  while(parent.firstChild) {
+    parent.removeChild(parent.firstChild)
+  }
 }
