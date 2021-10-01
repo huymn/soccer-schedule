@@ -38,7 +38,7 @@ const createNewFixture = (season) => {
   newFixture.setAttribute('data-host', 'v3.football.api-sports.io');
 
   //refresh rate of fixture table
-  newFixture.setAttribute('refresh-rate', '60');
+  newFixture.setAttribute('data-refresh', "");
 
   //today's date
   newFixture.setAttribute('data-date', "");
@@ -74,15 +74,58 @@ const createNewFixture = (season) => {
   return newFixture;
 }
 
+//Create new standing element
+const createNewStandings = (season) => {
+  //Create new div
+  const newStandings = document.createElement('div');
+
+  /*********************************
+  ****Add in all require attributes*
+  **********************************/
+  
+  //id of this standings(preset widget)
+  newStandings.setAttribute('id', 'wg-api-football-standings');
+
+  //where this data is hosted
+  newStandings.setAttribute('data-host', 'v3.football.api-sports.io');
+
+  //league to display for standings
+  newStandings.setAttribute('data-league', '39');
+
+  //team to display for
+  newStandings.setAttribute('data-team', "");
+
+  //season
+  newStandings.setAttribute('data-season', season);
+
+  //API key (SHOULD BE INVISIBLE/SECURE)
+  newStandings.setAttribute('data-key', '0faf0093c15b42c79332d719ba6724f9');
+
+  //theme of table (dark, light) default is light
+  newStandings.setAttribute('data-theme', '');
+
+  //show error
+  newStandings.setAttribute('data-show-errors', 'false');
+
+  //class of div
+  newStandings.setAttribute('class', 'api_football_loader');
+
+  //Return the new fixture
+  return newStandings;
+
+}
+
 seasonSelector.addEventListener('change', () => {
   //Get the selected season
   const season = seasonSelector[seasonSelector.selectedIndex].value;
 
   //Remove all current children nodes
   removeAllChildNodes(fixtureTable);
+  removeAllChildNodes(standingsTable)
 
   //Add in the newly created element
   fixtureTable.appendChild(createNewFixture(season));
+  standingsTable.appendChild(createNewStandings(season));
 });
 
 const removeAllChildNodes = (parent) => {
